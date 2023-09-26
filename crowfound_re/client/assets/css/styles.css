@@ -152,7 +152,7 @@ img {
 .nav__img {
   width: 88px;
   left: 1rem;
-  bottom: -2rem;
+  bottom: 10rem;
   filter: drop-shadow(0 4px 20px hsla(203, 71%, 60%, .5));
 }
 
@@ -197,6 +197,14 @@ img {
       var(--first-color) 100%);
   -webkit-background-clip: text;
   color: transparent;
+}
+
+.home__title span2 {
+  background: linear-gradient(90deg,
+      var(--second-color) 0%,
+      var(--first-color) 100%);
+  -webkit-background-clip: text;
+  color: rgb(27, 205, 110);
 }
 
 .home__description {
