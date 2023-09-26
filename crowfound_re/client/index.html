@@ -14,6 +14,52 @@
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="assets/css/styles.css">
 
+
+   
+   
+    <link rel="stylesheet" href="static/css/material-design-iconic-font.min.css">
+	
+   
+    <!-- This core.css file contains all plugin's CSS files. -->
+    <link rel="stylesheet" href="static/css/core.css">
+    <!-- Theme shortcodes/elements style -->
+    <link rel="stylesheet" href="static/css/style.css">
+    <style>
+        /* 弹出框的样式 */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        /* 弹出框内容的样式 */
+        .modal-content {
+            background-color: #323042;
+            padding: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 5px;
+            height: auto;
+            width:60%; /* 宽度自适应 */
+        }
+
+        /* 关闭按钮的样式 */
+        .close {
+            position: absolute;
+            top: 0px;
+            right: 20px;
+            padding: 0px;
+            cursor: pointer;
+            font-size: 50px;
+        }
+    </style>
+
     <title>Responsive NFT website - Bedimcode</title>
 </head>
 
@@ -22,7 +68,7 @@
     <header class="header" id="header">
         <nav class="nav container">
             <a href="#" class="nav__logo">
-                nft.io
+
             </a>
 
             <div class="nav__menu" id="nav-menu">
@@ -31,13 +77,13 @@
                         <a href="#" class="nav__link active-link">Home</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#" class="nav__link">Market</a>
+                        <a href="#about" class="nav__link">About</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#" class="nav__link">Activity</a>
+                        <a href="#service" class="nav__link">Service</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#" class="nav__link">Community</a>
+                        <a href="#contact" class="nav__link">Contact</a>
                     </li>
                 </ul>
 
@@ -68,12 +114,12 @@
             <div class="home__container container">
                 <div class="home__info">
                     <h1 class="home__title">
-                        <span>Discover</span> <br>
-                        Collect, and <br>
-                        sell NFTs.
+                        <span>Carbon Chain</span> <br>
+                        <span2>Green</span2> <br>
+                        Exchange.
                     </h1>
                     <p class="home__description">
-                        Explore on the world best largest NFT marketplace.
+                        blockchain carbon credit trading platform.
                     </p>
                     <a href="index2.html" class="home__button">Start</a>
                 </div>
@@ -88,49 +134,7 @@
                         </div>
                     </div>
 
-                    <div class="home__data">
-                        <div>
-                            <h2 class="home__data-number">26K+</h2>
-                            <span class="home__data-subtitle">Artwork</span>
-                        </div>
-
-                        <div>
-                            <h2 class="home__data-number">18K</h2>
-                            <span class="home__data-subtitle">Auction</span>
-                        </div>
-
-                        <div>
-                            <h2 class="home__data-number">8K</h2>
-                            <span class="home__data-subtitle">Artist</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="home__footer">
-                    <div>
-                        <span class="home__footer-title">Current bid</span>
-                        <h3 class="home__footer-number">2.00 ETH</h3>
-                        <span class="home__footer-subtitle">$8046.86</span>
-                    </div>
-
-                    <div>
-                        <span class="home__footer-title">Auction ending in</span>
-
-                        <div class="home__footer-time">
-                            <div class="home__footer-counter">
-                                <h3 class="home__footer-number">06</h3>
-                                <span class="home__footer-subtitle">hours</span>
-                            </div>
-
-                            <div class="home__footer-counter">
-                                <h3 class="home__footer-number">26</h3>
-                                <span class="home__footer-subtitle">minutes</span>
-                            </div>
-
-                            <div class="home__footer-counter">
-                                <h3 class="home__footer-number">50</h3>
-                                <span class="home__footer-subtitle">seconds</span>
-                            </div>
+                    
                         </div>
                     </div>
                 </div>
@@ -138,11 +142,203 @@
         </section>
     </main>
 
+    <!-- 弹出框 -->
+    <div id="aboutModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="aboutClose">&times;</span> <!-- 关闭按钮 -->
+            <section class="about-area pt-100">
+                <div class="container">
+                    <!-- Section Titel -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="section-title text-center">
+                                <h1>About Us</h1>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Section Titel -->
+                    <!-- About Content -->
+                    <div class="row pt-50">
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <!-- Speciality Single -->
+                            <div class="specialty-single pb-50">
+                                <div class="icon-titel">
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+                                    <h6>Great Support</h6>
+                                </div>
+                                <div class="spe-discribe">
+                                    <p>aaa</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Speciality Area -->
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <!-- Speciality Single -->
+                            <div class="specialty-single pb-50">
+                                <div class="icon-titel">
+                                    <i class="fa fa-diamond" aria-hidden="true"></i>
+                                    <h6>creative design</h6>
+                                </div>
+                                <div class="spe-discribe">
+                                    <p></p>
+                                </div>
+                            </div>
+                            <!-- Speciality Single -->
+                            <!-- Speciality Single -->
+                            <div class="specialty-single hidden-xs">
+                                <div class="icon-titel">
+                                    <i class="fa fa-desktop" aria-hidden="true"></i>
+                                    <h6>retina ready</h6>
+                                </div>
+                                <div class="spe-discribe">
+                                    <p>wwwwwwwwwwwwwwwwwwwwwwwww</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <div id="serviceModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="serviceClose">&times;</span>
+            
+        </div>
+    </div>
+
+
+
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="contactClose">&times;</span>
+            <section class="about-area pt-100">
+                <div class="container">
+                    <!-- Section Titel -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="section-title text-center">
+                                <h1>ABOUT CORPLEX</h1>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Section Titel -->
+                    <!-- About Content -->
+                    <div class="row pt-50">
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <!-- Speciality Single -->
+                            <div class="specialty-single pb-50">
+                                <div class="icon-titel">
+                                    <i class="zmdi zmdi-pin" aria-hidden="true"></i>
+                                    <h6>Great Support</h6>
+                                </div>
+                                <div class="spe-discribe">
+                                    <p>aaa</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Speciality Area -->
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <!-- Speciality Single -->
+                            <div class="specialty-single pb-50">
+                                <div class="icon-titel">
+                                    <i class="zmdi zmdi-email" aria-hidden="true"></i>
+                                    <h6>creative design</h6>
+                                </div>
+                                <div class="spe-discribe">
+                                    <p></p>
+                                </div>
+                            </div>
+                            <!-- Speciality Single -->
+                            <!-- Speciality Single -->
+                            <div class="specialty-single hidden-xs">
+                                <div class="icon-titel">
+                                    <i class="zmdi zmdi-phone" aria-hidden="true"></i>
+                                    <h6>retina ready</h6>
+                                </div>
+                                <div class="spe-discribe">
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+           
+        </div>
+    </div>
+
     <!--=============== SCROLLREVEAL ===============-->
     <script src="assets/js/scrollreveal.min.js"></script>
 
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
+
+    <script>
+        // 获取弹出框和关闭按钮的元素
+        var aboutModal = document.getElementById('aboutModal');
+        var serviceModal = document.getElementById('serviceModal');
+        var contactModal = document.getElementById('contactModal');
+        
+        var aboutCloseButton = document.getElementById('aboutClose');
+        var serviceCloseButton = document.getElementById('serviceClose');
+        var contactCloseButton = document.getElementById('contactClose');
+
+        // 获取"About"链接的元素
+        var aboutLink = document.querySelector('.nav__link[href="#about"]');
+        var serviceLink = document.querySelector('.nav__link[href="#service"]');
+        var contactLink = document.querySelector('.nav__link[href="#contact"]');
+
+        // 当点击"About"链接时显示弹出框
+        aboutLink.addEventListener('click', function () {
+            aboutModal.style.display = 'block';
+            serviceModal.style.display = 'none';
+            contactModal.style.display = 'none';
+        });
+
+        // 当点击"Service"链接时显示弹出框
+        serviceLink.addEventListener('click', function () {
+            serviceModal.style.display = 'block';
+            aboutModal.style.display = 'none';
+            contactModal.style.display = 'none';
+        });
+
+        // 当点击"Contact"链接时显示弹出框
+        contactLink.addEventListener('click', function () {
+            contactModal.style.display = 'block';
+            aboutModal.style.display = 'none';
+            serviceModal.style.display = 'none';
+        });
+
+        // 当点击关闭按钮或背景时隐藏弹出框
+        aboutCloseButton.addEventListener('click', function () {
+            aboutModal.style.display = 'none';
+        });
+
+        serviceCloseButton.addEventListener('click', function () {
+            serviceModal.style.display = 'none';
+        });
+
+        contactCloseButton.addEventListener('click', function () {
+            contactModal.style.display = 'none';
+        });
+
+        // 当用户点击背景时也隐藏弹出框
+        window.addEventListener('click', function (event) {
+            if (event.target == aboutModal) {
+                aboutModal.style.display = 'none';
+            }
+            if (event.target == serviceModal) {
+                serviceModal.style.display = 'none';
+            }
+            if (event.target == contactModal) {
+                contactModal.style.display = 'none';
+            }
+        });
+    </script>
 </body>
 
 </html>
